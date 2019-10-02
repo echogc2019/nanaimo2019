@@ -247,7 +247,7 @@ body {
   font-family: "domine", Arial, sans-serif;
   background-attachment: fixed;
   background-color: #fff;
-  color: #919193;
+  color: rgb(44, 62, 80);
   line-height: 1.7;
   letter-spacing: 0.4px;
 }
@@ -3952,6 +3952,10 @@ ul.pagination li a {
   font-style: italic;
   font-size: 24px !important;
   margin-bottom: 50px !important;
+}
+
+.ew-intro {
+  font-size: 18px;
 }
 
 /*** End of EW customization ***/
