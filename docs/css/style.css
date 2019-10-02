@@ -3940,6 +3940,12 @@ ul.pagination li a {
   color: #444 !important;
 }
 
+.ew-bold-sm {
+  font-weight: 700;
+  color: #444 !important;
+  font-size: 17px;
+}
+
 .ew-district {
   color: #444 !important;
   margin-bottom: 30px;
