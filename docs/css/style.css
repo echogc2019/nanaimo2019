@@ -1294,7 +1294,7 @@ html[xmlns] .flexslider .slides {
 .flex-caption1 h5,
 .flex-caption1 h6,
 .flex-caption1 p {
-  color: #aaa;
+  color: #999;
 }
 .flex-caption1 h1.caption-headline,
 .flex-caption1 h2.caption-headline {
@@ -1320,7 +1320,7 @@ html[xmlns] .flexslider .slides {
   font-family: "montserrat";
   font-size: 19px;
   margin-bottom: 12px;
-  color: #111;
+  color: #444;
 }
 .flex-caption1 i {
   color: #c0392b;
@@ -3937,7 +3937,21 @@ ul.pagination li a {
 
 .ew-bold {
   font-weight: 700;
-  color: #111 !important;
+  color: #444 !important;
+}
+
+.ew-district {
+  color: #444 !important;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.ew-slogan {
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 24px !important;
+  margin-bottom: 50px !important;
 }
 
 /*** End of EW customization ***/
