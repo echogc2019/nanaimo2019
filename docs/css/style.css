@@ -1285,7 +1285,7 @@ html[xmlns] .flexslider .slides {
   position: absolute;
   top: 50%;
   width: 100%;
-  margin-top: -165px;
+  margin-top: -190px;
 }
 .flex-caption1 h1,
 .flex-caption1 h2,
@@ -3976,7 +3976,7 @@ ul.pagination li a {
 
 /*** Customized with Love for Echo White :-) ***/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .ew_slider {
     width: 50% !important;
     margin-left: 50%;
