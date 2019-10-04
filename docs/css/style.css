@@ -1855,7 +1855,7 @@ a.button1:hover i {
   color: #fff;
 }
 .main-boxes .one-box3 {
-  width: 50%;
+  width: 100%;
   float: left;
   background: #ecf0f1;
 }
@@ -2549,7 +2549,7 @@ footer.bottom {
   width: 100%;
   float: left;
   padding: 100px 0 50px 0;
-  background: #ecf0f1;
+  background: #dce0e1;
 }
 footer.bottom h5 {
   font-weight: bold;
