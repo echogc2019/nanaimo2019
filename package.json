@@ -1,0 +1,23 @@
+{
+  "name": "echowhiteofficialwebsite",
+  "version": "0.1.1",
+  "description": "Source for https://echowhite.ca",
+  "main": ".eleventy.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echogc2019/nanaimo2019.git"
+  },
+  "author": "Official Agent of Echo White",
+  "license": "MIT",
+  "homepage": "https://echowhite.ca"
+}
