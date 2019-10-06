@@ -92,7 +92,7 @@ h5,
 h6 {
   color: #353535;
   font-family: "Montserrat", Arial, sans-serif;
-  text-transform: uppercase;
+  text-transform: capitalize;
   line-height: 1.7;
   font-weight: normal;
   margin: 0;
@@ -1300,7 +1300,7 @@ html[xmlns] .flexslider .slides {
 .flex-caption1 h2.caption-headline {
   font-weight: 700;
   font-family: "domine";
-  font-size: 40px;
+  font-size: 44px;
   margin-bottom: 19px;
   line-height: 1;
   color: #c0392b;
