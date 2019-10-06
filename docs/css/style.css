@@ -735,7 +735,7 @@ body {
   position: absolute;
   display: block;
   height: 5px;
-  width: 100%;
+  width: 60%;
   background: #2c3e50;
   border-radius: 10px;
   opacity: 1;
@@ -775,7 +775,7 @@ body {
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: -3px;
+  top: 9px;
   left: 8px;
 }
 #toggle-icon.open span:nth-child(2) {
@@ -787,8 +787,8 @@ body {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 39px;
-  left: 9px;
+  top: 34px;
+  left: 8px;
 }
 /** toggle icon end **/
 .navbar-fixed-top .navbar-collapse,
@@ -1300,7 +1300,7 @@ html[xmlns] .flexslider .slides {
 .flex-caption1 h2.caption-headline {
   font-weight: 700;
   font-family: "domine";
-  font-size: 43px;
+  font-size: 40px;
   margin-bottom: 19px;
   line-height: 1;
   color: #c0392b;
@@ -1389,7 +1389,7 @@ html[xmlns] .flexslider .slides {
   }
   .flex-caption1 h1.caption-headline,
   .flex-caption1 h2.caption-headline {
-    font-size: 30px;
+    font-size: 28px;
   }
   .flex-caption1 h2.caption-subheadline {
     font-size: 19px;
@@ -3988,6 +3988,12 @@ ul.pagination li a {
   color: #444 !important;
 }
 
+.ew-i {
+  font-weight: 700;
+  color: #444 !important;
+  font-style: italic;
+}
+
 .ew-bold-sm {
   font-weight: 700;
   color: #444 !important;
@@ -4015,6 +4021,12 @@ ul.pagination li a {
 
 .ew-active {
   color: #c0392b !important;
+}
+
+@media only screen and (max-width: 320px) {
+  .ew-logo-sm {
+    width: 198px;
+  }
 }
 
 /*** End of EW customization ***/
