@@ -4019,6 +4019,11 @@ ul.pagination li a {
   color: rgb(44, 62, 80);
 }
 
+.ew-intro_a {
+  font-size: 17px;
+  color: rgb(44, 62, 80);
+}
+
 .ew-active {
   color: #c0392b !important;
 }
