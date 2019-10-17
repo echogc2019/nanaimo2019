@@ -35,6 +35,14 @@ contact page
 pagination
 ------------------------------------------------------------*/
 
+.en, .fr {
+  display:none;
+}
+
+.en:lang(en), .fr:lang(fr) {
+   display:block;
+}
+
 /********* html5 and responsive content *********/
 header,
 nav,

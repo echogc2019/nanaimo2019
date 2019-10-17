@@ -8,8 +8,61 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-149396072-1');
+    </script>
+
+    <script>
+      // Cookies
+      function setCookie(name,value,days) {
+          var expires = "";
+          if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + (days*24*60*60*1000));
+              expires = "; expires=" + date.toUTCString();
+          }
+          document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+      }
+
+      function getCookie(name) {
+          var nameEQ = name + "=";
+          var ca = document.cookie.split(';');
+          for(var i=0;i < ca.length;i++) {
+              var c = ca[i];
+              while (c.charAt(0)==' ') c = c.substring(1,c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+          }
+          return null;
+      }
+
+      function eraseCookie(name) {
+          document.cookie = name+'=; Max-Age=-99999999;';
+      }
+
+      function onEnglish() {
+        $("html").attr("lang", 'en');
+        $("#en_id").addClass("ew-active");
+        $("#fr_id").removeClass("ew-active");
+        setCookie("lang", "en", 3000);
+        console.log("after setting cookie " + getCookie("lang"))
+      }
+
+      function onFrench() {
+        $("html").attr("lang", 'fr');
+        $("#fr_id").addClass("ew-active");
+        $("#en_id").removeClass("ew-active");
+        setCookie("lang", "fr", 3000);
+        console.log("after setting cookie " + getCookie("lang"))
+      }
+
+      if (getCookie("lang") === "en") {
+        console.log("Cookie EN")
+        document.documentElement.setAttribute('lang','en')
+      } else if (getCookie("lang") === "fr") {
+        console.log("Cookie FR")
+        document.documentElement.setAttribute('lang','fr')
+      } else {
+        console.log("Cookie NONE")
+      }
     </script>
 
     <meta charset="utf-8">
@@ -60,14 +113,25 @@
         </div>
       </div>
       <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <div class="cl-effect-12">
+          <div class="cl-effect-12 en">
             <ul class="nav navbar-nav pull-right">
               <li><a href="about.html" class="">About</a></li>
               <li><a href="news.html" class="">News</a></li>
               <li><a href="gallery.html" class="">Gallery</a></li>
               <li><a href="donate.html" class="ew-active">Donate</a></li>
-              <li><a href="index.html">En</a></li>
-              <li><a href="index.html">Fr</a></li>
+              <li><a href="#" onclick="onEnglish();" id="en_id">En</a></li>
+              <li><a href="#" onclick="onFrench();" id="fr_id">Fr</a></li>
+              <!-- <li><a href="vote.html">中</a></li> -->
+            </ul>
+          </div>
+          <div class="cl-effect-12 fr">
+            <ul class="nav navbar-nav pull-right">
+              <li><a href="about.html" class="">À propos</a></li>
+              <li><a href="news.html" class="">Nouvelles</a></li>
+              <li><a href="gallery.html" class="">Galerie</a></li>
+              <li><a href="donate.html" class="ew-active">Faire un don</a></li>
+              <li><a href="#" onclick="onEnglish();" id="en_id">En</a></li>
+              <li><a href="#" onclick="onFrench();" id="fr_id">Fr</a></li>
               <!-- <li><a href="vote.html">中</a></li> -->
             </ul>
           </div>
@@ -151,6 +215,7 @@
     </div>
   </div>
   </footer>
+  <script src="js/jquery.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/jquery-migrate.js"></script>
   <script src="js/bootstrap.js"></script>
