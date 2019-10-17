@@ -39,29 +39,19 @@
       }
 
       function onEnglish() {
-        $("html").attr("lang", 'en');
-        $("#en_id").addClass("ew-active");
-        $("#fr_id").removeClass("ew-active");
+        document.documentElement.setAttribute('lang','en');
         setCookie("lang", "en", 3000);
-        console.log("after setting cookie " + getCookie("lang"))
       }
 
       function onFrench() {
-        $("html").attr("lang", 'fr');
-        $("#fr_id").addClass("ew-active");
-        $("#en_id").removeClass("ew-active");
+        document.documentElement.setAttribute('lang','fr');
         setCookie("lang", "fr", 3000);
-        console.log("after setting cookie " + getCookie("lang"))
       }
 
       if (getCookie("lang") === "en") {
-        console.log("Cookie EN")
-        document.documentElement.setAttribute('lang','en')
+        onEnglish();
       } else if (getCookie("lang") === "fr") {
-        console.log("Cookie FR")
-        document.documentElement.setAttribute('lang','fr')
-      } else {
-        console.log("Cookie NONE")
+        onFrench();
       }
     </script>
 
@@ -119,8 +109,8 @@
               <li><a href="news.html" class="{{newsActive}}">News</a></li>
               <li><a href="gallery.html" class="{{galleryActive}}">Gallery</a></li>
               <li><a href="donate.html" class="{{donateActive}}">Donate</a></li>
-              <li><a href="#" onclick="onEnglish();" id="en_id">En</a></li>
-              <li><a href="#" onclick="onFrench();" id="fr_id">Fr</a></li>
+              <li><a href="#" onclick="onEnglish();" class="ew-active">En</a></li>
+              <li><a href="#" onclick="onFrench();">Fr</a></li>
               <!-- <li><a href="vote.html">中</a></li> -->
             </ul>
           </div>
@@ -130,8 +120,8 @@
               <li><a href="news.html" class="{{newsActive}}">Nouvelles</a></li>
               <li><a href="gallery.html" class="{{galleryActive}}">Galerie</a></li>
               <li><a href="donate.html" class="{{donateActive}}">Faire un don</a></li>
-              <li><a href="#" onclick="onEnglish();" id="en_id">En</a></li>
-              <li><a href="#" onclick="onFrench();" id="fr_id">Fr</a></li>
+              <li><a href="#" onclick="onEnglish();">En</a></li>
+              <li><a href="#" onclick="onFrench();" class="ew-active">Fr</a></li>
               <!-- <li><a href="vote.html">中</a></li> -->
             </ul>
           </div>
